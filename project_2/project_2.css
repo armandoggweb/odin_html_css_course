@@ -1,0 +1,108 @@
+body{
+    background-color: lightgray;
+}
+/*header*/
+header{
+    text-align: right;
+}
+a {
+    text-decoration: none;
+}
+header li{
+    display: inline-block;
+    font-size: smaller;
+}
+li p{
+    margin-bottom: 0;
+}
+button{
+    vertical-align: 0.5rem;
+}
+
+/*form*/
+section{
+    text-align: center;
+}
+form p{
+   font-size: 0.75rem;
+   margin-top: 0;
+   margin-bottom: 1rem;
+}
+.container{
+    width: 350px;
+    margin: 0 auto;
+    border: 1px grey solid;
+    border-radius: 3px;
+    background-color: white;
+}
+#form_subtitle{
+    margin-bottom: 0;
+}
+#learn_more{
+    font-size: smaller;
+}
+form{
+    width: 90%;
+    margin: 0 auto;
+    text-align: left;
+}
+input{
+    
+    margin: 0 auto;
+    width: 100%;
+    padding: 0.25rem 0;
+    display: block; 
+}
+label{
+    display: block;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+#btn{
+    margin: 1.5rem 0;
+    padding: 0.5rem 0;
+}
+
+#terms{
+    width: 80%;
+    margin: 2rem auto;
+    font-size: 0.85rem;
+}
+#captcha{
+    background-color: lightgray;
+    font-size: 0.75rem;
+    margin-bottom: 0;
+    padding: 1rem 0;
+}
+
+/*footer*/
+footer{
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    font-size: smaller;
+
+}
+footer ul{
+    margin-bottom: 0;
+    margin-top: 1.5rem;
+    padding: 0;
+}
+footer li{
+    display: inline-block;
+    list-style: none;
+}
+
+footer a{
+    color: gray;
+}
+footer p{
+    margin-top: 0;
+}
+
+.btn{
+    background-color: #0275d8;
+    color: white;
+    border-radius: 3px;
+}
