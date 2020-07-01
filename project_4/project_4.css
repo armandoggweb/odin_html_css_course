@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ff7f50;
+    width: 1440px;
+    height: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+header{
+    border: solid 1px #fff;
+}
+
+/*navigation bar*/
+
+.nav{
+    width: 1000px;
+    height: 35px;
+    position: relative;
+    left: 200px;
+    top: 85px;
+    margin-bottom: -35px;
+}
+.nav-bar{
+    display: flex;
+    height: 100%;
+}
+.nav-bar > *{
+    display: block;
+    background-color: gray;
+    background-image: linear-gradient(#686868, #5e5e5e, #707070, #8d8d8d) ;
+    border-left: 1px solid #545454;
+    width: 11.11%;
+    height: 100%;
+}
+.nav-bar > a{
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 7px;
+}
+
+.nav-bar a:first-child{
+    border-left: none;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px 0 0 4px;
+}
+
+.nav-bar a > img{
+    position: absolute;
+    top: 3px;
+    left: -25px;
+}
+.search-container{
+    flex-grow: 1;
+    width: 132px;
+    padding: 8px;
+    border-radius: 0 4px 4px 0;
+}
+.search-box{
+    padding: 0 20px;
+    width: 105px;
+    margin: 0 auto;
+    border: solid lightgray 1px;
+    border-radius: 10px;
+}
+input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0);
+    border: none;
+}
+.search-container:before{
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+    content: '';
+    height: 15px;
+    width: 15px;
+    background: url(img/search.svg);
+}
+
+/**/
+
+.hero{
+    display: block;
+    text-decoration: none;
+    height: 540px;
+    background: #add8e6 url("img/your_verse_hero.jpg") 0 100% no-repeat;  
+}
+.text, .film-link{
+    width: 1440px;
+    text-align: center;
+}
+.text {
+    position: relative;
+    top: 180px;
+    padding: 0 319px;
+}
+
+.film-link {
+    display: block;
+    position: absolute;
+    top: 350px;
+    margin-top: 30px;
+
+    text-decoration: none;
+    color: #fff;
+}
+.film-link:hover{
+    text-decoration: underline;
+    text-decoration-color: #fff;
+}
+h1, h2, h3 {
+    color: #fff;
+    font-weight: normal;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.6rem;
+}
+
+/* promotions gallery */
+
+.promotions{
+    display: flex;
+}
+
+.promotions > a{
+    display: block;
+    width: 25%;
+    height: 200px;
+    border: solid 1px #fff;
+}
+.promotions a:first-child{
+    background: #90ee90 url("img/promo_iphone5s.jpg") no-repeat;
+}
+.promotions a:nth-child(2){
+    background: #90ee90 url("img/promo_iphone5c.jpg") no-repeat;
+}
+.promotions a:nth-child(3){
+    background: #90ee90 url("img/promo_30_years.jpg") no-repeat;
+}
+.promotions a:last-child{
+    background: #90ee90 url("img/promo_supplier_responsibility.jpg") no-repeat;
+}
+/*footer*/
+
+footer{
+    margin: 20px 230px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: 0.7rem;
+    color: #6e6e6e
+}
+
+footer > *{
+    margin: 5px 10px;
+}
+footer ul{
+    list-style: none;
+    height: 12.5px;
+    display: flex;
+}
+footer li{
+    padding-right: 5px;
+}
+footer li ~ li{
+    padding-left: 5px;
+    border-left: 1px solid gray;
+}
+footer li:last-child{
+    padding-right: 0;
+}
+span:nth-child(1) {
+    padding-right: 5px;
+}
+span:nth-child(2) {
+    padding-left: 5px;
+    border-left: 1px solid gray;
+}
+
+footer a {
+    text-decoration: none;
+    color: #0088cc;
+}
+
+footer a:hover{
+    text-decoration: underline;
+}
+
