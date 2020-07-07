@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round');
+
+*{
+    border: 2px solid #fff;
+    padding: 0;
+    margin: 0;
+}
+header{
+    background-color: #808080;
+    width: 100%;
+    height: 100px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 4fr;
+}
+h1{
+    grid-column: 1 / -1;
+    padding: 50px 700px;
+    border-bottom: none;
+    text-align: center;
+    color:#fff;
+    font-weight: 700;
+    font-size: 3rem;
+    font-family: 'Varela Round', sans-serif;
+    background-color: #202020;
+    border: none;
+}
+.featured-article{ 
+    background-color: #202020;
+    border: none;
+    
+}
+
+p{
+    color: #fff;
+    border: none;
+    padding: 100px 100px;
+    line-height: 3rem;
+    font-family: 'Varela Round', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+
+.latest-posts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+.article{
+    background-color: #A9A9A9;
+    width: 100%;
+    height: 600px;
+}
+.article-membership{
+    grid-column: span 2;
+    border-radius: 10px;
+    background-color: #808080;
+}
+.panel{
+    background-color: #202020;
+    height: 1000px;
+}
+
+.community-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.person-of-the-week{
+    grid-column: span 2;
+    align-self: center;
+    height: 350px;
+    background-color:  	#484848;
+}
+.post{
+    height: 400px;
+    background-color: #A9A9A9;
+}
+.feature{
+    width: 100%;
+    height: 400px;
+    background-color: #484848;
+}
+.guides{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+.guides div:last-child{
+    grid-column-start: 2;
+    background-color:  #484848;
+    ;
+}
+.guide{
+    height: 570px;
+    background-color: #808080;
+}
+
+footer{
+    width: 100%;
+    height: 700px;
+    background-color: #A9A9A9;
+}
