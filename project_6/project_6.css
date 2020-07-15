@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+body{
+    background-color: #f1f1f1;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+nav{
+    padding: 0 20px;
+}
+main{
+    width: 60%;
+    margin: 0 auto;
+}
+
+
+/*top navbar*/
+.top-nav{
+    background-color: #131313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 32px;
+}
+
+.top-nav a{
+    color: #9f9f9f;
+    text-decoration: none;
+}
+
+.top-nav > div > *{
+    padding-right: 12px;
+}
+
+.left-top-nav{
+    display: flex; 
+    align-items: baseline;
+}
+
+.left-top-nav > a:first-child{
+    font-weight: 700;
+    color: #fff;
+}
+
+.right-top-nav a:last-child{
+    padding-right: 0;
+}
+.dropdown{
+    display: inline-block;
+    position: relative;
+}
+.dropdown-btn{
+    background: transparent;
+    border: none;
+    color: #9f9f9f;
+    cursor: pointer;
+}
+.dropdown-content{
+    display: none;
+    position: absolute;
+    width: 160px;
+    z-index: 1;
+}
+.dropdown-content a{
+    display: block;
+    background-color: #131313;
+    width: 220px;
+    height: 35px;
+    line-height: 35px;
+    padding-left: 12px;
+}
+
+.dropdown-content a + a{
+    border-top: 1px solid #9f9f9f;
+}
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+.top-nav a, .dropdown-btn{
+    font-size: 0.83em;
+}
+
+/*main navbar*/
+
+.main-nav{
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-right: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #ffffff;
+    font-size: 0.9em;
+}
+
+.main-nav > a{
+    display: block;
+    padding: 5px 12px;
+    text-decoration: none;
+    color: #aaaaaa;
+}
+.main-nav a:first-child{
+    padding-left: 0;
+}
+.main-nav a:last-child{
+    width: 50px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #eeeeee;
+}
+
+/* cover section */
+
+.cover{
+    display: grid;
+    grid-template: 1fr 1fr / 2fr 1fr;
+    gap: 8px;
+    height: 60vh;
+    max-height: 560px;
+    margin: 8px 8px 100px 8px;
+    color: #fff;
+}
+.cover > *{
+    background-color: aquamarine;
+}
+.cover article:first-child{
+    grid-row: 1 / span 2;
+}
+
+.cover article{
+    position: relative;
+    padding: 16px
+}
+.cover-header{
+    display: flex;
+    justify-content: space-between;
+}
+.cover-header > time{
+    font-size: .8em;
+}
+.logo{
+    font-size: 8em;
+    line-height: 100px;
+    font-weight: 900;
+}
+.cover-text{
+    position: absolute;
+    bottom: 16px;
+}
+.cover-text h1{
+    font-size: 3em; 
+}
+.cover-text h3{
+    font-size: 1.5em;
+}
+.caption{
+    display: flex;
+    list-style: none;
+}
+
+/*latest news section*/
+
+.latest-news > div{
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    grid-gap: 5px;
+}
+
+.latest-news article{
+    background-color: burlywood;
+}
+
+/* latest-funding section */
+.funding-header{
+    display: flex;
+    justify-content: space-between;
+}
+.latest-funding div:nth-child(2){
+    display: flex;
+    background-color: crimson;
+}
+
+.latest-funding ul{
+    list-style: none;
+}
+
+/* sections latets news */
+
+.sections{
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    grid-gap: 5px;
+
+}
+.sections section{
+    background-color: lightblue;
+}
+.sections ul{
+    list-style: none;
+}
+
+/* latest-deals section */
+
+.latest-deals div:first-child{
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest-deals div:nth-child(2){
+    display: grid;
+    grid-template: 1fr 1fr / repeat(4, 1fr);
+    grid-gap: 5px;
+}
+.latest-deals article{
+    background-color: lightgreen;
+}
+
+/* footer */
+.ft-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 160px;
+    background-color: darkkhaki;
+}
+.social{
+    display: flex;
+}
+.ft-links{
+    display: flex;
+}
+.copyright{
+    text-align: center;
+    height: 97.5px;
+    background-color: darksalmon;
+}
