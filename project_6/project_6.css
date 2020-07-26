@@ -12,11 +12,30 @@ nav{
     padding: 0 20px;
 }
 main{
-    width: 60%;
+    max-width: 1100px;
+    padding: 0 15px 0 15px;
     margin: 0 auto;
 }
-
-
+section{
+    margin-bottom: 100px;
+}
+a{
+    text-decoration: none;
+}
+/* navbar logo*/
+header{
+    position: relative;
+}
+.nav-logo{
+    display: none;
+    height: 82px;
+    width: 105px;
+    font-size: x-large;
+    text-align: center;
+    line-height: 80px;
+    background-color: mediumpurple;
+    color: #fff;
+}
 /*top navbar*/
 .top-nav{
     background-color: #131313;
@@ -97,7 +116,7 @@ main{
     font-size: 0.9em;
 }
 
-.main-nav > a{
+.main-nav  a{
     display: block;
     padding: 5px 12px;
     text-decoration: none;
@@ -106,16 +125,22 @@ main{
 .main-nav a:first-child{
     padding-left: 0;
 }
-.main-nav a:last-child{
-    width: 50px;
-    height: 100%;
+.main-nav div:last-child{
     position: absolute;
     right: 0;
+}
+.main-nav div > a{
+    display: block;
+    padding: 0;
+    width: 50px;
+    height: 50px;
     text-align: center;
-    line-height: 40px;
+    line-height: 50px;
     border-left: 1px solid #eeeeee;
 }
-
+.main-nav div a:last-child{
+    display: none;
+}
 /* cover section */
 
 .cover{
@@ -128,7 +153,7 @@ main{
     color: #fff;
 }
 .cover > *{
-    background-color: aquamarine;
+    background-color: lightgreen;
 }
 .cover article:first-child{
     grid-row: 1 / span 2;
@@ -163,6 +188,10 @@ main{
 .caption{
     display: flex;
     list-style: none;
+    font-size: .8em;
+}
+.caption > *{
+    padding-right: 10px;
 }
 
 /*latest news section*/
@@ -170,23 +199,90 @@ main{
 .latest-news > div{
     display: grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 20px;
+    margin-top: 20px;;
 }
 
-.latest-news article{
-    background-color: burlywood;
+.latest-news article > a {
+    display: block;
+    background-color: lightcoral;
+    margin-bottom: 10px;;
+    height: 120px;
+    min-height: 60px;
+}
+.latest-news h4 > a{
+    display: block;
+    text-decoration: none;
+    color: #000000;
+    padding-bottom: 10px;
+}
+.latest-news .caption{
+    font-size:.8em;
 }
 
 /* latest-funding section */
 .funding-header{
     display: flex;
     justify-content: space-between;
+    align-items: baseline;
 }
-.latest-funding div:nth-child(2){
+.funding-content{
     display: flex;
-    background-color: crimson;
+    justify-content: space-between;
+    margin-top: 20px;
 }
 
+.funding-content article{
+    flex: 1;
+    margin-right: 20px;
+    background-color: darksalmon;
+}
+.funding-content article:last-child{
+    margin-right: 0;
+}
+.funding-content h4 {
+    height: 40px;
+    background-color: darkseagreen;
+}
+.funding-links{
+    background-color: dodgerblue;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #fff;
+}
+.funding-links > li{
+    padding: 15px 0 0 50px;
+    font-size: .8em;
+}
+.funding-links a{
+    text-decoration: none;
+    color: #555;
+}
+.funding-content article > a:last-child {
+    display: block;
+    text-decoration: none;
+    font-size: .8em;
+    padding: 10px;
+}
+.funding-content-header {
+    background-color: cadetblue;
+    display: block;
+    position: relative;
+}
+.funding-content-header > :not(div){
+    padding-left: 85px;
+}
+.funding-content-header > ul{
+    height: 60px;
+    background-color: darkorange;
+}
+.funding-logo{
+    position: absolute;
+    background-color: chocolate;
+    height: 60px;
+    width: 60px;
+    top: 10px;
+    left: 10px;
+}
 .latest-funding ul{
     list-style: none;
 }
@@ -196,49 +292,250 @@ main{
 .sections{
     display: grid;
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
-    grid-gap: 5px;
+    grid-gap: 25px;
+}
+.sections a{
+    text-decoration: none;
+}
+.sections section > h2{
+    margin-bottom: 20px;
+}
+.section-header {
+    height: 250px;
+    position: relative;
+    background-color: darkseagreen;
+}
+.section-text {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
 
-}
-.sections section{
-    background-color: lightblue;
-}
-.sections ul{
+.section-text ul{
     list-style: none;
+    display: flex;
+    font-size: .75em;
 }
-
+.section-text ul > li:last-child{
+    padding-left: 10px;
+}
+.section-latest{
+    height: 100px;
+    position: relative;
+    background-color: lightpink;
+}
+.section-latest > div{
+    padding: 15px 100px 15px 15px;
+}
+.section-latest > a{
+    display: block;
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    right: 0;
+    background-color: lightseagreen;
+}
+.section-links{
+    padding-left: 15px;
+}
+.section-links > li{
+    padding: 10px 0 10px 0;
+    border-bottom: solid 1px lightslategray;
+    font-size: .8em;
+}
+.section-links li:last-child{
+    border: none;
+}
 /* latest-deals section */
 
 .latest-deals div:first-child{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .latest-deals div:nth-child(2){
     display: grid;
     grid-template: 1fr 1fr / repeat(4, 1fr);
-    grid-gap: 5px;
+    grid-gap: 25px;
 }
-.latest-deals article{
-    background-color: lightgreen;
+
+
+.latest-deals article > a{
+    display: block;
+    height: 200px;
+    background-color: lightpink;
 }
 
 /* footer */
 .ft-wrapper{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     height: 160px;
     background-color: darkkhaki;
 }
 .social{
     display: flex;
+    margin: 40px 0 30px 0;
+}
+.social a{
+    display: block;
+    text-decoration: none;
+    font-size: x-large;
+    border: lime 1px solid;
+    border-radius: 20px;
+    padding: 0 8px 0 8px;
+    margin-right: 20px;
 }
 .ft-links{
     display: flex;
+    
+}
+.ft-links > a{
+    display: block;
+    font-size: 0.8em;
+    text-decoration: none;
+    padding: 0 1px 0 1px;
+    margin-right: 20px;
 }
 .copyright{
     text-align: center;
     height: 97.5px;
+    font-size: 0.8em;
+    line-height: 100px;
     background-color: darksalmon;
 }
+
+/* media queries */
+
+@media screen and (max-width: 1000px){
+    .nav-logo{
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+    .top-nav, .main-nav{
+        padding-left: 110px;
+    }
+    .cover-header{
+        display: none;
+    }
+    .cover-text h1{
+        font-size: 2.5em;
+    }
+    .cover-text h3{
+        font-size: 1.3em;
+    }
+    .latest-news > div{
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr); 
+    }
+    .latest-funding article:last-child{
+        display: none;
+    }
+    .sections{
+        grid-template-columns: 1fr 1fr;   
+    }
+    .latest-deals div:nth-child(2){
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    
+}
+
+@media screen and (max-width: 770px){
+    /* navigation */
+    .nav-logo{
+        height: 50px;
+        line-height: 50px;
+    }
+    .top-nav{
+        display: none;
+    }
+    .main-nav > a{
+        display: none;
+    }
+    .main-nav div{
+        display: flex;
+    }
+    .main-nav div a:last-child{
+        display: block;
+    }
+
+    /* cover */
+    .cover{
+        grid-template: 1fr 1fr 1fr/ 1fr;
+        height: auto;
+        max-height: 100%;
+    }
+    .cover article:first-child{
+        grid-row: 1 / 1;
+    }
+    .cover article{
+        overflow: hidden;
+        min-height: 30vh;
+    }
+
+    .cover-text h1{
+        font-size: 1.5em; 
+    }
+
+    /* latests news */
+    .latest-news > div{
+        grid-template-columns: 1fr;
+    }
+    .latest-news article > a{
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin-right: 15px;
+    }
+    .latest-news article > h4{
+        font-size: .9em;
+    }
+
+    /* latest fundings */
+    .funding-header{
+        flex-wrap: wrap;
+    }
+    .funding-header > h2{
+        flex: 1 1 100%;
+    }
+    .funding-header > div{
+        display: flex;
+        flex-direction: column;
+    }
+    .funding-header div > a{
+        margin-top: 15px;
+    }
+    .funding-content{
+        flex-direction: column;
+    }
+    .funding-content article{
+        margin-top: 15px;
+    }
+    .funding-content article:last-child{
+        display: block;
+    }
+
+    .sections{
+        grid-template-columns: 1fr;
+    }
+    .section-header{
+        height: 50vh;
+    }
+
+    /* latest deals */
+
+    .latest-deals div:nth-child(2){
+        grid-template-columns: 1fr;
+    }
+    .latest-deals article > a{
+        height: 70px;
+        width: 70px;
+        float: left;
+        margin-right: 15px;
+    }
+    .latest-deals article > h4{
+        font-size: .9em;
+    }
+} 
