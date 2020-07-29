@@ -1,0 +1,42 @@
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+li{
+    padding: 0;
+}
+.img-n-0{
+    height: 200px;
+    background-color: lightcoral;
+}
+.img-n{
+    height: 225px;
+    background-color: lightcoral;
+}
+.img-n-2{
+    height: 275px;
+    background-color: lightblue;
+}
+.img-bg{
+    height: 300px;
+    background-color: lightgreen;
+}
+.img-sm{
+    background-color: lightpink;
+    height: 90px;
+}
+.img-sm-2{
+    height: 130px;
+    background-color: lightyellow;
+}
+.img-sm-3{
+    height: 50px;
+    background-color: lavenderblush;
+}
+.container{
+    max-width: 1310px;
+}
+input{
+    max-width: 100px;
+}
